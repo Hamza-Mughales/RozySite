@@ -1,0 +1,55 @@
+.row{
+    margin: 0 ;
+    padding: 0;
+}
+
+.col-12{
+    padding: 0;
+    margin: 0;
+}
+.login{
+    min-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background: #0000006b;
+}
+
+.c{
+    position: absolute;
+    margin-top: 20vh;
+}
+.form-content{
+    margin: auto;
+    padding: 50px;
+    border: 4px solid #ffffff8c;
+    border-radius: 18px;
+    background: #aab8c1ba;
+    box-shadow: -7px 6px 6px 2px #B0A999;
+}
+.btn-log{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 21px;
+}
+.logo{
+    width:100%;
+}
+.login img{
+    width: 79px;
+    height: 53px;
+    margin-bottom: 25px;
+}
+.login a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    float: right;
+    padding-top: 15px;
+}

@@ -1,0 +1,866 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../webfonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../webfonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Home-font;
+    src: url(../webfonts/home-font-lighter.ttf);
+}
+
+@font-face {
+    font-family: Home-font-2;
+    src: url(../webfonts/home-font.ttf);
+}
+
+body {
+    min-height: 1500px;
+    font-family: Raleway-Regular, Montserrat-Regular;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.see-more {
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    top: 3px;
+    background: #103f6d;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.see-more:hover{
+	background-color: #ce2350;
+	color: #fff;
+}
+
+.see-more i {
+    position: relative;
+    animation: mymove .5s infinite;
+}
+@keyframes mymove {
+	from {right: 0px;}
+	to {left: 10px;}
+}
+.see-more i.fa-arrow-down {
+    position: relative;
+	animation: down .5s infinite;
+	left: 10px;
+}
+@keyframes down {
+	from {top: 0px;}
+	to {bottom: 10px;}
+}
+
+/*** Reset css **/
+
+.gallery-block {
+    padding: 0;
+}
+
+
+/* wow.js*/
+
+.animate__animated {
+    animation-delay: 0.5s;
+}
+
+
+/* ///// Site CSS ////// */
+
+
+/* Navebar Section */
+
+.roz-nav {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: none;
+    z-index:1;
+}
+
+.roz-nav .navbar-nav {
+    margin-left: 80px;
+}
+
+.roz-nav ul {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.roz-nav ul * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.roz-nav ul li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .3em .4em;
+    padding: 0;
+    font-weight: 200;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.roz-nav ul a {
+    padding: .5em .8em;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.roz-nav ul a::before,
+.roz-nav ul a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.roz-nav ul a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #ce2350;
+    border-right: 3px solid #ce2350;
+    transform: translate(-100%, 50%);
+}
+
+.roz-nav ul a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #ce2350;
+    border-left: 3px solid #ce2350;
+    transform: translate(100%, -50%)
+}
+
+.roz-nav ul a:hover:before,
+.roz-nav ul a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.roz-nav ul a:hover {
+    color: #25861f;
+}
+
+.navbar-brand {
+    color: #ce2350;
+}
+
+.navbar-brand:hover {
+    color: #ce2350;
+}
+
+.nav-link {
+    font-family: Home-font;
+    letter-spacing: .18em;
+    color: #fffffffa !important;
+}
+
+
+/* Home Section */
+
+.roz-home {
+    background: url(../../files/imgs/home.jpg);
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roz-home .home-content {
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    z-index:2;
+}
+
+.roz-home .home-content h1 {
+    font-family: Home-font;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 55px;
+    line-height: 1.2em;
+    letter-spacing: .14em;
+    color: #ffffffe6;
+    width: 50%;
+    margin: auto;
+}
+
+.roz-home .home-content h1 span {
+    font-family: Home-font-2;
+    font-weight: bold;
+    color: #ff7996;
+    font-size: 51px;
+}
+
+.btn-conc-home {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 39px;
+    border-radius: 19px;
+    border-width: 0;
+}
+
+.btn-conc-works {
+    background-color: #008cba;
+    color: #fff;
+    padding: 5px 35px;
+    border-radius: 19px;
+    border-width: 0;
+    margin: 0 10px 0 20px;
+}
+
+.home-text .hvr-shutter-out-horizontal:before {
+    background: #ce2350;
+    border-radius: 19px;
+}
+
+
+/**  About Section */
+
+.roz-about {
+    padding: 0px 0px 50px 0px;
+}
+
+.roz-about img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 454px;
+    padding: 10px;
+}
+
+.roz-about h2 {
+    padding: 15px 0 20px;
+    font-weight: bold;
+}
+
+.roz-about h2 span {
+    color: #c51a47;
+    font-family: sans-serif;
+    letter-spacing: .05em;
+    font-size: 37px;
+}
+
+.roz-about p {
+    letter-spacing: .05em;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/* Skills Section */
+
+.skills {
+    margin-top: 50px;
+    padding: 0px 0 100px;
+}
+
+.skills h1 span {
+    border-bottom: 3px solid #ce2350;
+}
+
+.gallery-block .heading,
+.skills .heading,
+.roz-about .heading {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.gallery-block .heading h2,
+.skills .heading h2,
+.roz-contact .heading h2,
+.roz-about .heading h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.gallery-block .heading h2 span,
+.skills .heading h2 span,
+.roz-contact .heading h2 span,
+.roz-about .heading h2 span {
+    border-bottom: 3px solid #cd224f;
+    color: #000;
+    font-family: inherit;
+}
+
+.skills .progress {
+    height: 25px;
+    background: #eeeeee;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.skills .progress .progress-bar {
+    background: #008cba;
+    position: relative;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.skills .progress .progress-bar span {
+    position: absolute;
+    left: 97%;
+    display: block;
+    padding: 3px;
+    color: #ffffff;
+    background: #151515;
+    font-size: 10px;
+    font-weight: 100;
+    top: -40px;
+}
+
+.skills .progress .progress-bar span:before {
+    display: table;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #151515;
+    bottom: -8px;
+    left: 23%;
+}
+
+@media screen and (max-width: 767px) {
+    .skills .progress {
+        height: 20px;
+    }
+}
+
+.skills .second .progress-bar {
+    background: #73ae20;
+}
+
+.skills .third .progress-bar {
+    background: #ce2350;
+}
+
+.skills .fourth .progress-bar {
+    background: #E25111;
+}
+
+.skills p {
+    font-family: "Raleway", sans-serif;
+    line-height: 62px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .skills p {
+        line-height: 45px;
+        font-size: 15px;
+    }
+}
+
+.skills .first,
+.skills .second {
+    margin-bottom: 20px;
+}
+
+
+/* Ouate Section */
+
+#about-us-4 {
+    background: url("../../files/imgs/quate.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+#about-us-4 h3 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    line-height: 45px;
+}
+
+#about-us-4 h3 i {
+    color: #59717a;
+}
+
+#about-us-4 p {
+    font-family: "Raleway", sans-serif;
+    color: #cbcbcb;
+    margin-top: 8px;
+}
+
+.big-padding {
+    padding: 120px 0;
+}
+
+
+/* Services Section  */
+
+.services {
+    position: relative;
+}
+.services .container {
+    padding: 90px 0;
+}
+
+.services_overlay {
+    width: 100%;
+    position: absolute;
+    background-color: #00000045;
+    left: 0;
+}
+
+.services .fa {
+    font-size: 42px;
+}
+
+.vertical-heading h2 {
+    font-family: Home-font;
+    font-size: 50px;
+    letter-spacing: .05em;
+    line-height: 45px;
+    margin-left: 35px;
+}
+
+.vertical-heading h2 strong {
+    color: #afff3e;
+    font-family: Home-font-2;
+}
+
+.services {
+    background: url("../../files/imgs/services01.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.services .vertical-heading {
+    margin-bottom: 50px;
+    background: #0b000094;
+    padding: 10px;
+}
+
+.services .vertical-heading h2 {
+    color: #ffffff;
+}
+
+.services .section {
+    background: #0000008c;
+    padding: 25px 50px;
+    min-height: 170px;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+    .services .section {
+        padding: 20px 15px;
+    }
+}
+
+.services .section h2,
+.services .section h3,
+.services .section p {
+    color: #ffffff;
+}
+
+.services .section h2 {
+    color: #008cba;
+    margin-bottom: 6px;
+    transition: all 1s cubic-bezier(0.33, 0.58, 0.58, 1);
+}
+
+@media screen and (max-width: 992px) {
+    .services .section {
+        min-height: 188px;
+    }
+}
+
+.services .section:hover {
+    background: #008cba;
+}
+
+.services .section:hover h2 {
+    color: #202125;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+@media screen and (max-width: 767px) {
+    .services .section.left-section {
+        margin-bottom: 50px;
+    }
+}
+
+.services .section.two h2 {
+    color: #73ae20;
+}
+
+.services .section.two:hover {
+    background: #73ae20;
+}
+
+.services .section.two:hover h2 {
+    color: #202125;
+}
+
+.services .section.three h2 {
+    color: #ce2350;
+    font-size: 42px;
+}
+
+.services .section.three:hover {
+    background: #ce2350;
+}
+
+.services .section.three:hover h2 {
+    color: #202125;
+}
+
+.services .section.four h2 {
+    color: #E25111;
+}
+
+.services .section.four:hover {
+    background: #E25111;
+}
+
+.services .section.four:hover h2 {
+    color: #202125;
+}
+
+
+/* Gallery */
+.gallery-block.compact-gallery .item {
+    max-width: 32%;
+    margin: 5px;
+}
+
+.works a img {
+    height: 350px;
+    width: 100%;
+}
+
+
+
+/* Socail Media */
+
+.roz-contact {
+    padding: 100px 0;
+}
+
+
+/* .roz-socila-media{
+    /* background-color: rgba(0, 0, 0, 0.781);
+    padding: 50px 0; *
+} */
+
+.roz-socila-media ul {
+    display: flex;
+    position: relative;
+}
+
+.roz-socila-media ul li {
+    list-style: none;
+}
+
+.roz-socila-media ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 39px;
+    font-size: 20px;
+    margin: 0 9px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.roz-socila-media ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.roz-socila-media ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.roz-socila-media ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.roz-socila-media ul li a:hover:before {
+    top: 0;
+}
+
+.roz-socila-media ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.roz-socila-media ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.roz-socila-media ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.roz-socila-media ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+/* Contact Section */
+
+.roz-contact .contact {
+    background-color: #103f6d;
+    color: #fff;
+}
+
+.roz-contact .heading h2 {
+    margin-bottom: 50px;
+}
+
+.roz-contact .contact hr {
+    background-color: #fff;
+}
+
+.roz-contact .card .card-body h3 {
+    font-weight: 300;
+    font-family: Home-font;
+    font-size: 30px;
+}
+
+.send-contact {
+    background: #ce2350;
+    color: #fff;
+    padding: 5px 24px;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.send-contact:hover {
+    color: #fff;
+    background: #103f6d;
+}
+
+
+/* Footer section */
+
+.roz-footer {
+    padding: 17px 0;
+    background: linear-gradient(to right, #bf0032, #040163);
+    color: #fff;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.roz-footer {
+    color: #ffffffc7;
+}
+
+.roz-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.roz-footer .hamza-design:hover {
+    text-decoration: none;
+}
+
+
+/*****************/
+
+
+/* Media  */
+
+/*  Large devices 
+@media  () { 
+
+        
+}
+ */
+
+
+/* Medium devices */
+
+@media (max-width: 991.98px) {
+    .roz-nav {
+        position: absolute;
+        top: 10px;
+        width: auto;
+        background: none;
+        z-index: 10;
+    }
+    .roz-nav .show {
+        background-color: black;
+        padding: 30px 0;
+        transition: .8s;
+    }
+    .roz-nav .navbar-nav {
+        margin-left: 0;
+        width: 50%;
+    }
+    .roz-nav ul li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 0 0 100px;
+        padding: 0px;
+        font-weight: 100;
+        width: 100px;
+    }
+    .roz-home .home-content h1 {
+            font-size: 73px;
+            width: 100%;
+
+    }
+    .roz-home .home-content h1 span {
+        font-size: 69px;
+    }
+    .roz-about h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+    .roz-about h2 span {
+        font-size: 24px;
+    }
+    .roz-about p {
+        letter-spacing: 0;
+        padding: 0;
+    }
+    .vertical-heading h2 {
+        font-size: 45px;
+    }
+    .services .section {
+        padding: 25px 40px;
+    }
+    #about-us-4 h3 {
+        font-size: 25px;
+    }
+    .gallery-block .heading h2 span,
+    .roz-contact .heading h2 span {
+        font-size: 40px;
+    }
+    .roz-socila-media ul {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+/* Small devices */
+
+@media (max-width: 767.98px) {
+    .roz-home .home-content h1 {
+        font-size: 51px;
+        width: 100%;
+    }
+    .roz-home .home-content h1 span {
+        font-size: 46px;
+    }
+    #about-us-4 h3 {
+        font-size: 20px;
+    }
+    .gallery-block .heading h2 span,
+    .roz-contact .heading h2 span {
+        font-size: 30px;
+    }
+    .roz-socila-media ul {
+        padding: 0;
+    }
+    .xs-hide {
+        display: none;
+    }
+    .roz-footer {
+        padding: 0;
+    }
+    .roz-footer div:first-child {
+        text-align: center;
+        padding: 5px 0 10px;
+    }
+    
+    .gallery-block.compact-gallery .item {
+    max-width: 48%;
+        }
+        
+        .works a img {
+            height:300px;
+        }
+
+}
+
+
+/* Extra small devices */
+
+@media (max-width: 575.98px) {
+    .roz-home {
+        padding: 0;
+    }
+    .roz-home .home-content h1 {
+        font-size: 48px;
+        width: 100%;
+    }
+    .roz-home .home-content h1 span {
+        font-size: 38px;
+        letter-spacing: .04em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .btn-conc-home,.btn-conc-works {
+        margin-bottom: 20px;
+    }
+    .btn-conc-works {
+        background-color: #ce2350;
+    }
+    .btn-conc-home {
+        background-color: #0087b3;
+        color: #fff;
+        font-weight: bold;
+    }
+    #about-us-4 h3 {
+    font-size: 18px;
+        }
+    .big-padding {
+    padding: 70px 0;
+        }
+    .gallery-block.compact-gallery .item {
+    max-width: 98%;
+        }
+   .works a img {
+            height:auot;
+            width:100%
+        }
+        .roz-socila-media ul {
+            /* width: 80%; */
+        }
+}
